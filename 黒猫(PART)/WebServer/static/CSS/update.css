@@ -1,0 +1,52 @@
+body {
+  font-size: 18px; /* 모든 글자 크기 키우기 */
+  color: #333; /* 폰트 색상 */
+  background-color: #f5f5f5; /* 배경색 */
+}
+
+form {
+  padding: 20px; /* 폼 내부 패딩 */
+  max-width: 600px; /* 최대 폼 너비 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+label {
+  display: block; /* 블록 레벨 요소로 변환하여 한 줄에 한 요소씩 표시 */
+  font-size: 20px; /* 라벨 글자 크기 키우기 */
+  margin-bottom: 10px; /* 라벨 아래 마진 */
+}
+
+input[type="text"] {
+  font-size: 20px; /* 입력 필드 글자 크기 키우기 */
+  padding: 10px; /* 입력 필드 내부 패딩 */
+  margin-bottom: 20px; /* 입력 필드 아래 마진 */
+  width: 100%; /* 입력 필드 전체 너비 */
+  box-sizing: border-box; /* 패딩과 테두리를 요소의 너비에 포함 */
+  border: 2px solid #ccc; /* 입력 필드 테두리 */
+  border-radius: 5px; /* 입력 필드 테두리 반경 */
+}
+
+button[type="submit"] {
+  background-color: #4caf50; /* 버튼 배경색 */
+  color: white; /* 버튼 텍스트 색상 */
+  padding: 15px 20px; /* 버튼 내부 패딩 */
+  border: none; /* 테두리 없음 */
+  border-radius: 5px; /* 버튼 테두리 반경 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  font-size: 20px; /* 버튼 글자 크기 */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  cursor: pointer; /* 커서 모양 변경 */
+  transition: background-color 0.3s ease; /* 배경색 변경 애니메이션 */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* 호버 시 배경색 변경 */
+}
+
+.input-container {
+  border: 2px solid #666; /* 입력 필드를 둘러싸는 div 테두리 */
+  border-radius: 10px; /* 입력 필드를 둘러싸는 div 테두리 반경 */
+  padding: 20px; /* 입력 필드를 둘러싸는 div 내부 패딩 */
+  margin-bottom: 20px; /* 입력 필드를 둘러싸는 div 아래 마진 */
+  background-color: #eee; /* 입력 필드를 둘러싸는 div 배경색 */
+}

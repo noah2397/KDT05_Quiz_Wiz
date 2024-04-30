@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0; /* 배경색 추가 */
+}
+
+h1 {
+  background-image: url("../header.png");
+  /* 배경 이미지의 위치 설정 */
+  background-position: center;
+  /* 배경 이미지의 크기 설정 */
+  background-size: repeat;
+  /* 반복 설정 */
+  background-repeat: repeat;
+}
+
+h1,
+h2,
+h5 {
+  color: #404040; /* 파스텔 검정색 */
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+.button-container button:hover {
+  background-color: #0056b3; /* hover 시 배경색 변경 */
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 40%;
+  font-family: Arial, sans-serif;
+  border: 2px solid #404040; /* 파스텔 검정색 테두리 */
+}
+
+th,
+td {
+  border: 1px solid #404040; /* 파스텔 검정색 테두리 */
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2; /* 테이블 헤더 배경색 */
+  font-weight: bold;
+}
+
+#main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #404040; /* 파스텔 검정색 테두리 */
+  background-color: #ffffff; /* 흰색 배경 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  /*가로로 배치*/
+  display: flex;
+}
+#main > * {
+  flex: 1; /* 자식 요소들이 동일한 너비를 가지도록 설정 */
+}

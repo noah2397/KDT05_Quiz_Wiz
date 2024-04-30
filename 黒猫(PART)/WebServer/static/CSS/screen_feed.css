@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffe4b2; /* 파스텔 톤의 주황색 */
+}
+.container {
+  display: inline-flex;
+  align-items: center;
+}
+.container > div {
+  margin-left: 20px; /* 이미지와 다른 요소 사이의 간격 조절 */
+}
+.container2 {
+  max-width: 30%;
+  height: auto;
+}
+.question-details {
+  text-align: center;
+}
+img {
+  max-width: 70%;
+  height: auto;
+}
+h1 {
+  font-size: 28px; /* 글자 크기 키움 */
+  text-align: center; /* 가운데 정렬 */
+}
+button {
+  background-color: #87ceeb; /* 파스텔 파란색 톤의 버튼 색상 */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px; /* 글자 크기 키움 */
+  align-items: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ddd; /* border 추가 */
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px; /* padding 조정 */
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2; /* 테이블 헤더 배경색 */
+}

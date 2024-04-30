@@ -1,0 +1,4 @@
+-- SQLBook: Code
+-- Active: 1706681927328@@127.0.0.1@3306@quiz_wiz
+select * from  理系  where Q like "動物の口の中にある、ものを噛むための硬い器官は何 ?";
+-- SQLBook: Code

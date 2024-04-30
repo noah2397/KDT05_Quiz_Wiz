@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>데이터 수정 화면</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='CSS/update.css')}}"
+    />
+  </head>
+  <body>
+    <form action="/submit_form/{{table}}" method="POST">
+      {% for row in rows %}
+      <div>
+        <input type="hidden" name="hidden_id" value="{{ row[0] }}" />
+        <div>
+          <label for="question{{ loop.index }}">문제:</label>
+          <input type="text" name="Q" value="{{ row[0] }}" />
+        </div>
+        <div>
+          <label for="category{{ loop.index }}">선지1</label>
+          <input type="text" name="K1" value="{{ row[2] }}" />
+        </div>
+        <div>
+          <label for="choice1{{ loop.index }}">선지2</label>
+          <input type="text" name="K2" value="{{ row[3] }}" />
+        </div>
+        <div>
+          <label for="choice2{{ loop.index }}">선지3</label>
+          <input type="text" name="K3" value="{{ row[4] }}" />
+        </div>
+        <div>
+          <label for="choice3{{ loop.index }}">선지4</label>
+          <input type="text" name="K4" value="{{ row[5] }}" />
+        </div>
+        <div>
+          <label for="choice4{{ loop.index }}">정답</label>
+          <input type="text" name="A" value="{{ row[6] }}" />
+        </div>
+      </div>
+      {% endfor %}
+      <button type="submit">제출하기</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>위즈의 세계에 어서오세요!</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='CSS/index.css')}}"
+    />
+  </head>
+
+  <body>
+    <h1>クイズRPG 魔法使いと黒猫のウィズ : 問題自動解</h1>
+    <div class="button-container">
+      <button onclick="location.href='/screen_feed'">
+        문제풀이 서비스 체험하기!
+      </button>
+    </div>
+    <h2>문제 허브</h2>
+    <div id="main">
+      <div>
+        <img
+          src="{{url_for('static', filename='cat1.jpg')}}"
+          height="650"
+          width="520"
+          alt
+        />
+      </div>
+      <table>
+        <tr>
+          <th>카테고리</th>
+          <th>문제</th>
+        </tr>
+        <tr>
+          <td><h3>雑学</h3></td>
+          <td>
+            <button onclick="location.href='/database/雑学'">문제 보기</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>スポーツ</h3>
+          </td>
+          <td>
+            <button onclick="location.href='/database/スポーツ'">
+              문제 보기
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><h3>理系</h3></td>
+          <td>
+            <button onclick="location.href='/database/理系'">문제 보기</button>
+          </td>
+        </tr>
+        <tr>
+          <td><h3>文系</h3></td>
+          <td>
+            <button onclick="location.href='/database/文系'">문제 보기</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>アニメゲーム</h3>
+          </td>
+          <td>
+            <button onclick="location.href='/database/アニメゲーム'">
+              문제 보기
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><h3>芸能</h3></td>
+          <td>
+            <button onclick="location.href='/database/芸能'">문제 보기</button>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <img
+          src="{{url_for('static', filename='cat2.png')}}"
+          height="650"
+          width="520"
+          alt
+        />
+      </div>
+    </div>
+    <h2>문제 크롤링 일시 : 24/04/29</h2>
+    <h5>제작자 : 명노아</h5>
+  </body>
+</html>

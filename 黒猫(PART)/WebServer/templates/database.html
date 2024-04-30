@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>데이터베이스 확인</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='CSS/database.css')}}"
+    />
+  </head>
+
+  <body>
+    <h1>Query Result</h1>
+    <form action="/database/{{table}}" method="POST">
+      <input
+        type="text"
+        name="query"
+        placeholder="검색할 문제를 입력하세요~!"
+      />
+      <input type="submit" value="Submit" />
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>문제</th>
+          <th>분류</th>
+          <th>선지1</th>
+          <th>선지2</th>
+          <th>선지3</th>
+          <th>선지4</th>
+          <th>정답</th>
+          <th>--</th>
+          <th>--</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+        <tr>
+          <td>{{ row[0] }}</td>
+          <td>{{ row[1] }}</td>
+          <td>{{ row[2] }}</td>
+          <td>{{ row[3] }}</td>
+          <td>{{ row[4] }}</td>
+          <td>{{ row[5] }}</td>
+          <td>{{ row[6] }}</td>
+          <td>
+            <button
+              onclick="window.location.href='/delete_db/{{table}}_{{row[0]}}'"
+              method="POST"
+            >
+              삭제
+            </button>
+          </td>
+          <td>
+            <button
+              onclick="window.location.href='/update_db/{{table}}_{{row[0]}}'"
+              method="POST"
+            >
+              수정
+            </button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <script>
+      console.log("코드 실행");
+    </script>
+  </body>
+</html>
